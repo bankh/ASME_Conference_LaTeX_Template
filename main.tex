@@ -1,0 +1,153 @@
+% !TEX encoding = UTF-8 Unicode
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  IMECE 2026 Conference Paper Template
+%%  Based on asmeconf class (v1.46) from CTAN: https://ctan.org/pkg/asmeconf
+%%
+%%  Class options:
+%%      [colorlinks]  - colored hyperlinks (remove before final ASME submission)
+%%      [balance]     - balance column heights on last page
+%%      [lineno]      - line numbers for draft review (run twice for placement)
+%%      [grid]        - traditional grid-style author block
+%%      [nofoot]      - omit ASME copyright footer
+%%      [nohead]      - omit conference headers
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Uncomment \DocumentMetadata if your LaTeX format is 2022/06/01 or later
+% \DocumentMetadata{
+% 	lang       = eng-US,
+% 	pdfstandard = A-3u,
+% 	pdfversion  = 1.7,
+% }
+
+%% Remove [colorlinks] before final submission to ASME (black text for print)
+\documentclass[colorlinks,balance]{asmeconf}
+
+%%%%%  additional packages  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{blindtext}
+\usepackage{multirow}
+\usepackage{enumitem}
+
+%%%%%  custom math commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+\DeclarePairedDelimiter\bracket{[}{]}
+\DeclarePairedDelimiter\paren{(}{)}
+\DeclarePairedDelimiter\curl{\lbrace}{\rbrace}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+%% editing commands (uncomment during drafting, comment out for final)
+% \newcommand{\xneed}[1]{\textcolor{red}{#1}}
+% \newcommand{\xrev}[1]{\textcolor{blue}{#1}}
+
+%%%%%  pdf metadata  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{%
+	pdfauthor={Author Names},
+	pdftitle={Paper Title},
+	pdfkeywords={keyword one, keyword two, keyword three},
+	pdfsubject={IMECE 2026},
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%% Conference information
+\ConfName{Proceedings of the ASME 2026\linebreak International Mechanical Engineering Congress and Exposition}
+\ConfAcronym{IMECE2026}
+\ConfDate{November 8--12, 2026}
+\ConfCity{Vancouver, BC, Canada}
+\PaperNo{IMECE2026-XXXXX}
+
+%% Title
+\title{Your Paper's Title}
+
+%% Authors and affiliations
+%%   \affil{#} tags the author to \SetAffiliation{#}
+%%   \CorrespondingAuthor{email} marks the corresponding author
+%%   \JointFirstAuthor marks joint first authors
+\SetAuthors{%
+    YOUR NAME\affil{1}\CorrespondingAuthor{you@colostate.edu},
+    Author~Two\affil{1}
+}
+
+\SetAffiliation{1}{Department of Systems Engineering, Colorado State University, Fort Collins, CO 80523}
+
+\maketitle
+
+%%% Keywords (must come BEFORE end of abstract)
+\keywords{keyword one, keyword two, keyword three}
+
+%%%%%  ABSTRACT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Abstract should be 200 words or less
+\begin{abstract}
+\blindtext
+\end{abstract}
+
+%%%%%%%%%  NOMENCLATURE (OPTIONAL)  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Uncomment and edit as needed
+% \begin{nomenclature}
+% \EntryHeading{Roman letters}
+% \entry{$F$}{Force [N]}
+% \entry{$m$}{Mass [kg]}
+%
+% \EntryHeading{Greek letters}
+% \entry{$\alpha$}{Thermal diffusivity [m$^2$/s]}
+% \entry{$\omega$}{Angular velocity [rad/s]}
+%
+% \EntryHeading{Acronyms}
+% \entry{CAD}{Computer-Aided Design}
+% \entry{FEA}{Finite Element Analysis}
+% \end{nomenclature}
+
+%%%%%%%%%  BODY OF PAPER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}\label{sec:introduction}
+
+\cite{Herber2017e}
+\cite{Sundarrajan2025b}
+\cite{Azad2024b, Azad2025b}
+
+\blindtext[4]
+
+
+\section{Background}\label{sec:background}
+
+\blindtext[4]
+
+
+\section{Methods}\label{sec:methods}
+
+\blindtext[4]
+
+
+\section{Results and Discussion}\label{sec:results}
+
+\blindtext[4]
+
+
+\section{Conclusion}\label{sec:conclusion}
+
+\blindtext[2]
+
+
+%%%%%  ACKNOWLEDGMENTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Acknowledgments}
+\blindtext[1]
+
+
+%%%%%  REFERENCES  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Run: pdflatex, bibtex, pdflatex, pdflatex
+
+\bibliographystyle{asmeconf}
+\bibliography{References}
+
+\end{document}
