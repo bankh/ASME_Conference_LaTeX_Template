@@ -1,5 +1,7 @@
 # ASME Conference Paper Template
 
+**[View/edit this paper on Overleaf](https://www.overleaf.com/read/rrwgvkbcnwth#b5516e)**
+
 A LaTeX template for ASME conference papers using the `asmeconf` class. This template can be adapted to **any ASME conference** (IMECE, IDETC/CIE, SMASIS, etc.) by updating the conference-specific fields in `main.tex`.
 
 ## Adapting to Your Conference
