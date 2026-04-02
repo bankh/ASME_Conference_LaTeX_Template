@@ -29,6 +29,7 @@
 \usepackage{blindtext}
 \usepackage{multirow}
 \usepackage{enumitem}
+\usepackage{microtype}
 
 %%%%%  custom math commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -80,7 +81,9 @@
 
 \SetAffiliation{1}{Department of Systems Engineering, Colorado State University, Fort Collins, CO 80523}
 
+\microtypesetup{nopatch=item}
 \maketitle
+\microtypesetup{patch=item}
 
 %%% Keywords (must come BEFORE end of abstract)
 \keywords{keyword one, keyword two, keyword three}
